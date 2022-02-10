@@ -1,0 +1,144 @@
+.card {
+    border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    box-shadow: 0 6px 12px rgb(140 152 164 / 8%);
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    .card-header {
+        background-color: #fff;
+        border-bottom: 0.0625rem solid rgba(231, 234, 243, 0.7);
+        margin-bottom: 0;
+        padding: 1.3125rem 1.3125rem;
+    }
+
+    &.card-hover-shadow {
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0 6px 12px rgba(140, 152, 164, 0.25) !important;
+        }
+    }
+
+    .card-footer {
+        background-color: #fff;
+        border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
+        display: block;
+        padding: 1.3125rem 1.3125rem;
+    }
+
+    .card-subtitle {
+        color: #8c98a4;
+        display: block;
+        font-size: 0.76562rem;
+        font-weight: 600;
+        letter-spacing: 0.03125rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    .card-title {
+        color: #1e2022;
+        display: block;
+        margin-bottom: 0;
+    }
+
+    &.loading::before {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0.25rem;
+        content: " ";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+div {
+    &.vertical-align {
+        align-items: center;
+        display: flex;
+        height: 100%;
+
+        > .row {
+            width: 100%;
+        }
+    }
+}
+
+.form-register {
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
+.form-register .form-control:focus {
+    z-index: 2;
+}
+
+.form-register .checkbox {
+    font-weight: 400;
+}
+
+.form-register input {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: -1px;
+}
+
+.form-register input.first {
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.form-register input.last {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    margin-bottom: 10px;
+}
+
+.form-register .form-control {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.form-signin {
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin input[type="email"] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: -1px;
+}
+
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    position: relative;
+}
