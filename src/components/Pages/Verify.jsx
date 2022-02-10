@@ -19,13 +19,9 @@ const Verify = ({ authenticationService }) => {
         let validationErrors = []
 
         if (validationErrors.length === 0) {
-            let result = {
-                link: '', validationErrors: validationErrors
-            }
+            const result = await authenticationService.sendVerification()
 
-            result = await authenticationService.sendVerification()
-
-            validationErrors = result.validationErrors
+            validationErrors = result
         }
 
         setErrors(validationErrors)

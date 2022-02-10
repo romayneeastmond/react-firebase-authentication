@@ -116,7 +116,7 @@ const authenticationService = () => {
     }
 
     const getVerificationEmail = () => {
-        window.localStorage.getItem('firebaseAuthenticationDemonstration_email')
+        return window.localStorage.getItem('firebaseAuthenticationDemonstration_email')
     }
 
     const rememberMe = (emailAddress) => {
